@@ -2,6 +2,7 @@
 
 > _一个基于 create-react-app 简易后台 ts 版本_
 
+https://fengnovo.github.io/react-admin/
 ## 技术栈
 
 - react + hooks
@@ -16,11 +17,12 @@
 ## 启动
 
 ```bash
-yarn start
+npm install
+npm run start
 ```
 
 ## 打包
 
 ```bash
-yarn build
+npm run build
 ```
