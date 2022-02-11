@@ -1,5 +1,5 @@
 {
-  "name": "react-antd-admin",
+  "name": "react-admin",
   "version": "1.0.0",
   "scripts": {
     "start": "react-app-rewired start",
@@ -55,5 +55,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "."
+  "homepage": "https://fengnovo.github.io/react-admin"
 }
