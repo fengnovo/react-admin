@@ -1,4 +1,3 @@
-import './style.less'
 import React, { useContext } from 'react'
 import { Redirect, RouteComponentProps } from 'react-router-dom'
 import { observer } from 'mobx-react-lite'
@@ -8,6 +7,7 @@ import img from '@/assets/login_title.png'
 import bgSVG from '@/assets/undraw_voting_nvu7.svg'
 import * as stores from '../../store'
 import axios from '../../common/axios'
+import './style.less'
 
 const FormItem = Form.Item
 

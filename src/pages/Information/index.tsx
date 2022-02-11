@@ -1,4 +1,3 @@
-import './style.less'
 import React, { useContext, useEffect } from 'react'
 import { RouteComponentProps } from 'react-router-dom'
 import { Card, Col, Row, Icon, Table, Badge, Tooltip, Tag, List, Avatar, Button } from 'antd'
@@ -7,6 +6,7 @@ import * as stores from '../../store'
 import axios from '../../common/axios'
 import { PRODUCT_TYPE } from '../../common/const'
 import { randomColor } from '../../common/utils'
+import './style.less'
 
 const columns = [
   { title: '产品ID', dataIndex: 'productId', key: 'productId', width: '200px' },

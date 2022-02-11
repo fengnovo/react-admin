@@ -1,5 +1,6 @@
-const path = require('path');
-const { override, fixBabelImports, addLessLoader, addDecoratorsLegacy, addWebpackAlias } = require('customize-cra')
+const path = require('path')
+const { override, fixBabelImports, addLessLoader, addDecoratorsLegacy, addWebpackAlias, addWebpackPlugin } = require('customize-cra')
+const FilterWarningsPlugin = require("webpack-filter-warnings-plugin");
 
 module.exports = override(
   fixBabelImports('import', {
@@ -19,4 +20,8 @@ module.exports = override(
   addWebpackAlias({        
     "@": path.resolve(__dirname, "src"),        
   }),
+  addWebpackPlugin(new FilterWarningsPlugin({
+    exclude:
+      /mini-css-extract-plugin[^]*Conflicting order. Following module has been added:/,
+  })),
 )
